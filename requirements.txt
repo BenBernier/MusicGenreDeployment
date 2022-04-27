@@ -1,12 +1,8 @@
-blinker==1.4
-brotlipy==0.7.0
-certifi==2021.10.8
 Flask==2.1.1
-google-pasta==0.2.0
 gunicorn==20.1.0
 keras==2.8.0
 numpy==1.21.0
 pandas==1.4.2
-webencodings==0.5.1
 Werkzeug==2.0
-WTForms==3.0.0
+librosa==0.9.1
+tensorflow==2.8.0
