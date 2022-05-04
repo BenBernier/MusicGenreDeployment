@@ -28,7 +28,7 @@ def classify(song):
     #down_blob = bucket.blob(song)
     #file_string = down_blob.download_as_string()
     #audio, sample_rate = librosa.load(io.BytesIO(file_string), res_type='kaiser_fast')
-    song_url = os.path.join(MYDIR, "static/", song)
+    song_url = os.path.join(MYDIR, "tmp/", song)
     #print("This is the file in classify: " + song.filename)
     #print("This is the new absolute path: " + song_url)
     #with io.open(os.path.join(MYDIR, app.config['UPLOAD_FOLDER'], song), 'rb') as song_file:
