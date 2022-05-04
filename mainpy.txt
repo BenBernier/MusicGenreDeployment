@@ -13,7 +13,7 @@ UPLOAD_FOLDER = './static'
 #UPLOAD_FOLDER = 'static'
 app = Flask(__name__)
 MYDIR = os.path.dirname(__file__)
-bucket_name = 'musicgenrebucket'
+bucket_name = 'musicgenrebucket'   
 
 client = storage.Client.from_service_account_json('./creds/flask-testing-346413-f118304b860e.json')
 bucket = client.get_bucket(bucket_name)
