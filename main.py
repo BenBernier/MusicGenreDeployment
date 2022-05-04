@@ -7,7 +7,7 @@ import os
 import io
 #from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = './tmp'
+UPLOAD_FOLDER = 'tmp'
 #use this for windows
 #UPLOAD_FOLDER = 'static'
 app = Flask(__name__)
