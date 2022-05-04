@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Music Classification</title>
+  </head>
+  <body>
+<h1>Music Genre Classification</h1>
+<div>{{ content }}</div>
+	
+<h3>Prediction:</h3>
+<div>
+	This song's genre is <strong>{{ prediction }}</strong>
+</div>
+
+<div id='button'>
+	  <form action="/">
+	    <input type=submit value='Submit Another Song'> 
+	  </form>
+
+    <form action="music" method="POST"  
+    enctype="multipart/form-data">
+      <input type="hidden" name="text" value="{{ song }}">
+      <input type=submit value='Play Song'>
+    </form>
+</div>
+
+
+  </body>
+</html>

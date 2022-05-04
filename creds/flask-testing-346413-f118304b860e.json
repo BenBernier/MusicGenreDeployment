@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "flask-testing-346413",
+  "private_key_id": "f118304b860e5ab229b746e79d8abeb8961a7502",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPmGDDO1OE7eQk\nk1FlcAf76tYAv6vQ/Y5eVAMOaFBbh1l6IW5uddvZRoGSGFMilqMai70td4nQvv2J\nckA7e15oym1dlNFxe3vFxroWARe6lxERhg66GSU9RixK46QssQx/2AzWTXuWv5k7\n6MAM7ysuXsTb/Czc+MowfWhOBTpXse4lL5kSGc+Urd+X4PZYKSEOsIIp7Ccd6nqm\nbmsf/TWQYIoLvcTjS8kgRhG5zeVKigwWg5B6Om63hSq8j/f/0Im/1mvvnHq/wIWS\nWPx4+qMI6UR1u83QXKCBJKpUUbsEC0qQB3QuIJjKGzncFi3a3YjnJcwZps/fYZgR\njSszB9TRAgMBAAECggEALjA7m0SYZROe9qpWamjeReUunzUGL/YyVnd/xJVeB7da\nJ6vHi8kqVLH0w0IpQSFeAdqEiVi275yHAa1LcFCXJV6grbkeTo8Ib20zWxD8LBZP\nhGQc47gTiooR8cmrbgwoeUtjM81Cibxwhh1XmakfJO6OA1ocyz+JkPdeHTnZjMgR\n2SxUWudF1KKRIeaxccIB7N+Ub8GWYk9KKEiNLqTSRGuU+kyhpxbjZoES7la9li0j\n2CBTU/16RUfGwX6GPSIcaOgVBmLMgaW9tgHROdicVY5ckilZf+K/pMabMlsOk1cB\nAgfBEwELPohksTrUcVcMj40M2GfgrbXKmE26gRcYaQKBgQDqJl1tv+5ezgOBfPhx\n+IWAUsOVUff21Y593H9oigJ/lmu8vJm5CXxSytZiHpKH9T4rCLVQv50ziZFeSx66\n23cpaRlaHKAIfsxUeqmz5GsamKKmT5CYb9f+3FRsOwNI7Lu2XLAhLw8Xgfe9R6w0\nXCK/WjtidgBSe2GsjnrM0GTdZQKBgQDi96Vh0i48l0qFolVVvpFmqMew8ZX+3OkZ\nLSaGOtNyguZI2PUVYU+JeyFpVooCnIljT0VV3vWkHnC634RB2CgV8WBUIraXRcTP\nLPQyi0ayWg3+8AjkOg5ljmgvi5GDPt0+sygT7cyroG/EAZRw0tNMQ/vrFYSRtfH1\nCyM+bUho/QKBgB2t3TvTDzDfJhycrZUsridU1kuwByE3codLkq66h5SKiX9z3HxS\n0npgEYqAW4x2Lnof8XOZxiBJOK7eELgYp2MNWlRMupA5Gkc/ARG3S0gkvsEb5rUb\nwCIi5WSOmlz8/NIhr4WVRHFzXOaWFiLQ5uqgUlSppmLOFtRbfv9FDvPtAoGAIWVE\n7VbKvNmZ+n2/RqWKqWtOLqftZRnGJpExKPEA6cl+7tsVfLbbyCPY77HvDqFPydAB\nKLhstmBQP/7ha/rNMyVYAik1ap62bbF0oPdDSLzdcFSLSmGMer7wb4Z+u6wFS9N6\noywLQHmT2GhPGia7Nm6OY7G/1tzJpD+mSOo1jFUCgYEA50xOXRGBPjvF0lU2nKV3\nTPLdntXprVILUQOlLa/hHddPOUAmQmD58rbOaHoTNi0Kw39Fghp+bDw4AJSlBu3u\nscLkTzAl/PE+eMSFJXzHxn9yiWB6s5CKgq4uFiEh1JuEcXxmpCYfciQ/hp8sD0On\nOb4yTBbMyeDy1u9LjcnF73Y=\n-----END PRIVATE KEY-----\n",
+  "client_email": "musicgenre@flask-testing-346413.iam.gserviceaccount.com",
+  "client_id": "117586324657343742868",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/musicgenre%40flask-testing-346413.iam.gserviceaccount.com"
+}

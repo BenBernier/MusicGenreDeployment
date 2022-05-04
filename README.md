@@ -1,0 +1,20 @@
+# Music Genre Classification Project - Andrew Getchell, Ben Bernier
+
+
+## Genre Indentifciation Modeling:
+
+The example used to base the model code can be found at this example/reference found here: https://www.youtube.com/watch?v=2mCfP6mpQpo
+
+First, the data set being used is read in (found here: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification). It contains the raw audio file, visual representaion of these files, and complete csv files that hold the meta data for each audio file as a row with the columns being the data features. To parse the audio files, I used Librosa (Python audio manipulation) to extract the MFCC (Mel-frequency cepstral coefficients) for each audio clip. These are the ceptstral coeffcients that represent audio files. Then, this data is transformed into a data frame with the columns "features" and "genre" where features are the MFCC's and genre is the genre of music.Then, we seperate these columns into target and feature columns, and create categories based on the genres. I then perform a train-test split on this data (currently a 82/18 split). Using Tensorflow and Keras, a created a nerual network to train a model based on this data. I went with 6 hidden layers and started with the base values/functions from the exmaple as well as other NN's we have done in class. The model is then compiled with the loss equal categorical crossentropy and the adam optimizer. The model is then fit with (currently, subject to change) a batch size of 40 and epoch count of 350. The model accuracy is then checked with the test data. The model is saved using the built in Keras save functionality. 
+
+Currently, the best and final model is using a 82/18 split, 2 hidden layers (256 and 64 densities), 32 batch size, and 50 epochs. This yielded the most consistent results and a accuracy of 63.88%. The saved model is then used in the actual Flask app. I used the same code I used to test files in the notebook. This extracts the MFCC features from the users' song and sends that data to the model to predict on. The predicted genre is then presented to the user.
+
+
+## Genre Indentifciation Application/Interface:
+
+As for the interface used we have created a HTML file through Flask to view this as a webpage. Currently have a labeled title as well as two buttons. "Choose File" which will allow the user to access their machine's documents to select the audio file to upload. "Submit" will then be used to put that audio file through the classification model and will reveal the result. Restrictions so that the user will have to upload a specific .wav file. From there it takes you to the results page where it displays what the genre is. The user will then be able to either choose another song and go back to the original page or if they so choose go to the next and final HTML page. On this last one the original song chosen will then play for the user so they can listen to it.
+
+
+### Heroku Deployment:
+
+For the deployment portion, we used Heroku to deploy the app. A Procfile was created to tell Heroku the app name. The requirements.txt file lets Heroku know what dependicies to download and the Aptfile tells Heroku what Linux packages to install. We then created a Heroku account and deployed the app. This was a very long and arduous process that took a lot of trial and error and small code changes (see the massive amount of commits). Ultimately, our app is deployed but does not work fully. It turns out Heroku has a limiation where files cannot be uploaded to the remote server that the app is live on after the app is deployed. This renders our app useless as it depends solely on the user beoing able to uplaod a file. We didd play around with using GCP as a cloud storage platform, but this too did not work as the file can never make it there because of Heroku's limiation. 

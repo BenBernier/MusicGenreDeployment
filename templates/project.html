@@ -2,14 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-	<title>Page Title</title>
+	<title>Music Classification</title>
   </head>
   <body>
 
-	<h1>Music Genre Classification</h1>
+<h1>Music Genre Classification</h1>
+	
+{% from "_formhelpers.html" import render_field %}
+	
+<form action="results" method="POST"  
+  enctype="multipart/form-data">
+  <div>
 	<p>Click the button to select a song.</p>
-	<input type="file" id="myFile" name="filename">
-	<input type="submit">
+	<input type="file" accept='.wav' name="file">
+	<input type="submit" value='Submit Song' name='submit_btn'>
+  </div>
+</form>
 
   </body>
 </html>
