@@ -29,6 +29,7 @@ def classify(song):
     #file_string = down_blob.download_as_string()
     #audio, sample_rate = librosa.load(io.BytesIO(file_string), res_type='kaiser_fast')
     song_url = os.path.join(MYDIR, "tmp/", song)
+    print("PATH: " + song_url)
     #print("This is the file in classify: " + song.filename)
     #print("This is the new absolute path: " + song_url)
     #with io.open(os.path.join(MYDIR, app.config['UPLOAD_FOLDER'], song), 'rb') as song_file:
@@ -39,8 +40,7 @@ def classify(song):
     predicted_value=model.predict(mfccs_scaled_features)
     predicted_label=np.argmax(predicted_value,axis=1)
     prediction_genre = classes[predicted_label[0]]
-
-
+    print("GENRE: " + prediction_genre)
     return prediction_genre
 
 ###Flask
